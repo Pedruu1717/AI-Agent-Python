@@ -1,11 +1,9 @@
-# Projeto RL de IA
+# AI agent that finds the best path to the goal while avoiding traps. Uses the Q-Learning algorithm.
 
-#### Realizado por Manuel Cabral e Pedro Melo - Grupo 5.
+##### In this project, we developed model-free learning.
+- In this method, the agent does not know the rewards and moves randomly around the world until it reaches the Goal, thus completing an episode.
+- After each episode, the Q Learning table is updated. This table contains rewards for each possible action in each possible state, which are calculated from the Goal to the initial position for each episode.
+- After all episodes are completed, arrows are marked on the board to indicate the best action to take in each state.
 
-
-##### Neste projeto desenvolvemos uma aprendizagem sem modelo.
-- Neste método o agente não conhece recompensas e move-se aleatoriamente pelo mundo até chegar ao Goal, completando assim um episódio.
-- Após cada episódio é atualizada a tabela Q Learning. Nesta tabela constam recompensas para cada ação possível em cada estado possível, que são calculadas desde o Goal até à posição inicial, para cada episódio.
-- Depois de concluídos todos os episódios são marcadas setas no tabuleiro a indicar a melhor ação a tomar em cada estado. 
-
-###### Nota: Para tornar cada episódio mais "rápido", no ficheiro client.py pode-se alterar no método execute, da classe Client, o parâmetro sleep_t e igualar a 0.
+###### Note: 
+To make each episode ‘faster,’ in the client.py file, you can change the sleep_t parameter in the execute method of the Client class and set it to 0.
